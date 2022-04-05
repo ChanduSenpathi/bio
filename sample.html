@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Online Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand bg-danger text-white p-2 rounded-circle" href="#">BIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="sample.html">Books</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="btn nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Sign in
+                            </a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Custormer Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body m-auto w-100 p-5">
+                  <form class="d-flex flex-column justify-content-center align-items-center  w-100">
+                      <input class="m-2 p-2 w-75" type="email" placeholder="Enter Email Id *">
+                      <input class="m-2 p-2 w-75" type="password" placeholder="password *">
+                      <div class="d-flex justify-content-between flex-wrap w-75">
+                          <div class="d-flex">
+                            <input type="checkbox" class="align-self-center">
+                            <label class="ml-2 align-self-center">Remember me</label>
+                          </div>
+                          <a href="#" class="text-primary">Forgot Password?</a>
+                      </div>
+                      <a href="index.html" class="align-self-center btn btn-light btn-outline-success login-btn">Login</a>
+                  </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn">Don't have account</button>
+                  <a href="#" class="btn text-dark btn-outline-info ">Signup?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+        <div class="container pt-5">
+            <div class="d-flex justify-content-between align-items-center">
+            <a class=" btn btn-secondary text-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                Filter
+              </a>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Price
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Rs.100 to Rs.400</a></li>
+                  <li><a class="dropdown-item" href="#">Rs.400 to Rs.700</a></li>
+                  <li><a class="dropdown-item" href="#">Rs.700 to Rs.1000</a></li>
+                  <li><a class="dropdown-item" href="#">Rs.1000 to Rs.2000</a></li>
+                  <li><a class="dropdown-item" href="#">More than Rs.2000</a></li>
+                </ul>
+              </div>
+            </div>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul>
+                      <li><a href="#">Freedom Fighters</a></li>
+                      <li><a href="#">Politicians</a></li>
+                      <li><a href="#">Sceintists</a></li>
+                  </ul>
+                  </div>
+                </div>
+            <h1 class="text-center pt-3 text-dark">Sceintists</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-12 card bg-dark text-white m-3">
+                    <img class="card-img-top w-100 card-images p-1"
+                        src="https://pbs.twimg.com/profile_images/879355674957926400/VSGZHGib_400x400.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Albert Einstein</h4>
+                        <p class="card-text">Albert Einstein was a German-born theoretical physicist, widely
+                            acknowledged to be one of the greatest physicists of all time.Einstein is best known for
+                            developing the theory of relativity.
+                        </p>
+                        <h4>Rs.200</h4>
+                        <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                        <a href="#" class="text-dark btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 card bg-dark text-white m-3">
+                    <img class="card-img-top w-100 card-images p-1"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Louis_Pasteur.jpg/507px-Louis_Pasteur.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Louis Pasteur</h4>
+                        <p class="card-text">Louis Pasteur ForMemRS was a French chemist and microbiologist renowned for
+                            his discoveries of the principles of vaccination, microbial fermentation, and
+                            pasteurization.
+                        </p>
+                        <h4>Rs.170</h4>
+                        <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                        <a href="#" class="text-dark btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 card bg-dark text-white m-3">
+                    <img class="card-img-top w-100 card-images p-1"
+                        src="https://i.insider.com/569eb176c08a80d7118ba914?width=1000&format=jpeg&auto=webp"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Isaac Newton</h4>
+                        <p class="card-text">Sir Isaac Newton PRS was an English mathematician, physicist, astronomer,
+                            alchemist, theologian, and author widely recognised as one of the greatest mathematicians
+                            and physicists.
+                        </p>
+                        <h4>Rs.400</h4>
+                        <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                        <a href="" class="text-dark btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-center">Freedom fighters</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-12 cards m-3 text-white bg-danger">
+                    <img class="card-img-top card-images p-1"
+                        src="https://static.india.com/wp-content/uploads/2020/06/Mahatma-Gandhi-Insta.jpg"
+                        alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Mahatma Gandhi</h4>
+                        <p class="card-text">Mohandas Karamchand Gandhi, also known as Gandhi, was an Indian lawyer,
+                            anti-colonial nationalist and political ethicist who employed nonviolent resistance to lead
+                            the successful campaign for India's independence from British rule</p>
+                            <h4>Rs.1000</h4>
+                            <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                            <a href="#" class="text-white btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 card m-3 text-white bg-danger">
+                    <img class="card-img-top card-images p-1"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Bhagat_Singh_1929.jpg/640px-Bhagat_Singh_1929.jpg"
+                        alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Bhagat Singh</h4>
+                        <p class="card-text">Bhagat Singh was a charismatic Indian revolutionary who participated in the
+                            mistaken murder of a junior British police officer in what was to be retaliation for the
+                            death of an Indian nationalist.</p>
+                        <h4>Rs.700</h4>
+                        <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                        <a href="#" class="text-white btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12 card m-3 text-white bg-danger">
+                    <img class="card-img-top card-images p-1"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jnehru.jpg/1200px-Jnehru.jpg"
+                        alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Jawaharlal Nehru</h4>
+                        <p class="card-text">Jawaharlal Nehru was an Indian politician, anti-colonial nationalist,
+                            secular humanist, social democrat, diplomat, journalist and author who was a central figure
+                            in India during the middle of the 20th century.</p>
+                            <h4>Rs.950</h4>
+                            <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                            <a href="#" class="text-white btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-center">Politicians</h1>
+            <div class="row justify-content-center">
+                <div class=" col-lg-3 col-md-4 col-sm-12 card m-3 bg-success text-white">
+                    <img class="card-img-top card-images p-1"
+                        src="https://yt3.ggpht.com/fsjUoWZmI4g9r1OpAjdma75OLPSsj4xFnwzvwZ4ccoj_KY2wKh7RfFejqGXPOrNeW8QqQs_Q=s900-c-k-c0x00ffffff-no-rj"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Narendra Modi</h4>
+                        <p class="card-text">Narendra Damodardas Modi is an Indian politician serving as the 14th and
+                            current prime minister of India since 2014. Modi was the chief minister of Gujarat from 2001
+                            to 2014 and is the Member of Parliament from Varanasi</p>
+                            <h4>Rs.800</h4>
+                            <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                            <a href="#" class="text-dark btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-4 col-sm-12 card m-3 bg-success text-white">
+                    <img class="card-img-top card-images p-1"
+                        src="https://spiderimg.amarujala.com/assets/images/2018/08/17/750x506/atal-bihari-vajpayee_1534485475.jpeg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Atal Bihari Vajpayee</h4>
+                        <p class="card-text">Atal Bihari Vajpayee was an Indian politician and diplomat who served three
+                            terms as the prime minister of India, first for a term of 13 days in 1996, then for a period
+                            of 13 months from 1998 to 1999, followed by a full term from 1999 to 2004.</p>
+                            <h4>Rs.1500</h4>
+                            <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                            <a href="#" class="text-dark btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+                <div class=" col-lg-3 col-md-4 col-sm-12 card m-3 bg-success text-white">
+                    <img class="card-img-top card-images p-1"
+                        src="https://cdn.britannica.com/48/222648-050-F4D0A2D8/President-of-India-A-P-J-Abdul-Kalam-2007.jpg"
+                        alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">A. P. J. Abdul Kalam</h4>
+                        <p class="card-text">Avul Pakir Jainulabdeen Abdul Kalam was an Indian aerospace scientist who
+                            served as the 11th president of India from 2002 to 2007. He was born and raised in
+                            Rameswaram, Tamil Nadu and studied physics and aerospace engineering.</p>
+                            <h4>Rs.1000</h4>
+                            <a href="#" class="text-white btn btn-primary btn-outline-success">Buy now</a>
+                            <a href="#" class="text-dark btn btn-warning btn-outline-danger">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid p-5 bg-dark">
+        <section class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-center text-white">
+                <h4 class="mb-3">Qucik links</h4>
+                <a href="#" class="text-white">Home</a>
+                <a href="#" class="text-white">Books</a>
+                <a href="#" class="text-white">About Us</a>
+                <a href="#" class="text-white">Contact Us</a>
+                <a href="#" class="text-white">Quaries</a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                <h4>Address</h4>
+                <address class="mt-3">5-54/5-6, gandhi street Near seetharamaraju statue, Visakhaptnam district,Andhrapradesh,509462.
+                </address>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                <h4 class="mb-3">Contact & Subscribe</h4>
+                <a href="#" class="text-white">call: +91 9876543210</a>
+                <form class="d-flex flex-column mt-2 justify-content-start align-items-start">
+                    <input type="email" placeholder="Enter Email" class="text-white w-100 p-1">
+                    <input type="submit" value="Subscribe"
+                        class="text-white btn btn-outline-success mt-2 align-self-end">
+                </form>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h4 class="text-white">Follow Us On</h4>
+                <i class="fa-brands fa-facebook text-white icons mt-3 bg-danger p-2 rounded-circle"></i>
+                <i class="fa-brands fa-youtube text-white icons m-2 bg-danger p-2 rounded-circle"></i>
+                <i class="fa-brands fa-twitter text-white icons m-2 bg-danger p-2 rounded-circle"></i>     
+                <i class="fa-brands fa-instagram text-white icons m-2 bg-danger p-2 rounded-circle"></i>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
